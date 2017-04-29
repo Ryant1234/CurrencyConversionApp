@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExchangeRateApp.Views.ExchangeRatePage">
+    <StackLayout>
+        <Label Text="Tiltle" />
+    </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+     
+            <Picker Title="Convert From" Grid.Row="0"  Grid.Column="0" />
+                <Picker Title="Convert To"  Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+   
+  
+
+</ContentPage>
