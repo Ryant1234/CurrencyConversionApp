@@ -22,25 +22,30 @@ namespace ExchangeRateApp.Views
             InitializeComponent();
             pickerConvertFrom.ItemsSource = _exchangeRateService.countriesCurrencyList;
             pickerConvertTo.ItemsSource = _exchangeRateService.countriesCurrencyList;
+            pickerConvertTo.SelectedIndex = 1;
 
         }
 
         async void pickerConvertFrom_SelectedIndexChanged(object sender, EventArgs e)
         {
+           
             var currencyFrom = pickerConvertFrom.Items[pickerConvertFrom.SelectedIndex];
             var currencyTo = pickerConvertTo.Items[pickerConvertTo.SelectedIndex];
             var exchangeAmount = int.Parse(txtCurrencyAmount.Text);
 
 
         
-                var exchangeRates = await _exchangeRateService.GetExchangeRates(currencyFrom, currencyTo, exchangeAmount);
+                var exchangeRates = await _exchangeRateService.GetExchangeRates(currencyFrom, currencyTo);
 
 
             var exchangeTo = _exchangeRateService.countriesDictionary[currencyTo];
 
-            var test = exchangeRates.rates[exchangeTo].ToString();
+            var rate = exchangeRates.rates[exchangeTo];
 
-         await   DisplayAlert("title", test, "cancel");
+            var amount =  _exchangeRateService.CaculateExchangeRate(exchangeAmount, rate).ToString();
+
+            var message = $"{exchangeAmount} {currencyFrom} = $ {amount} {exchangeTo} ";
+         await   DisplayAlert("title", message, "cancel");
                
             }
       

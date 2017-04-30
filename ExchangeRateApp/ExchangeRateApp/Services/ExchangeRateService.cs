@@ -48,14 +48,15 @@ namespace ExchangeRateApp.Services
 
 
 
-        public int CaculateExchangeRate(string exchangeFromAmount, int exchangeToRate)
+        public decimal CaculateExchangeRate(int exchangeFromAmount, decimal exchangeToRate)
 
         {
 
+           
             
 
-                return 5;
-              
+                return exchangeFromAmount * exchangeToRate; ;
+
         }
 
 
