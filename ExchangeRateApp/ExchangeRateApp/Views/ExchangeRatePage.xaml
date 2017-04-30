@@ -7,17 +7,21 @@
     </StackLayout>
         <Grid>
             <Grid.RowDefinitions>
-                
-            </Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
      
-            <Picker Title="Convert From" Grid.Row="0"  Grid.Column="0" />
-                <Picker Title="Convert To"  Grid.Row="0" Grid.Column="1"/>
-            </Grid>
+            <Picker SelectedIndexChanged="pickerConvertFrom_SelectedIndexChanged" 
+                
+                x:Name="pickerConvertFrom" Title="Convert From" Grid.Row="0"  Grid.Column="0" />
+                <Picker x:Name="pickerConvertTo" Title="Convert To"  Grid.Row="0" Grid.Column="1"/>
+        <Entry Keyboard="Numeric" x:Name="txtCurrencyAmount" Grid.Row="1" Grid.Column="1"  />
+    </Grid>
    
   
 
