@@ -28,6 +28,11 @@ namespace ExchangeRateApp.Services
 
            var currencyFrom = countriesDictionary[exchangeFrom];
             var currencyTo = countriesDictionary[exchangeTo];
+
+            if (currencyFrom == currencyTo)
+                return null;
+
+
              
 
             // Gets a single movie for the detail page

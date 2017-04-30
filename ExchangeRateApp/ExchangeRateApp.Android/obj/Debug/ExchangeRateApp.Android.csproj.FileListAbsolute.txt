@@ -74,6 +74,7 @@ C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateAp
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp.Android\obj\Debug\res\values\styles.xml
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp.Android\obj\Debug\R.cs.flag
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp.Android\obj\Debug\uploadflags.txt
+C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp.Android\obj\Debug\res\drawable\currenciesimage.jpg
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp.Android\bin\Debug\ExchangeRateApp.Android.dll.mdb
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp.Android\bin\Debug\ExchangeRateApp.dll.mdb
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp.Android\bin\Debug\Java.Interop.dll.mdb

@@ -3,15 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExchangeRateApp.Views.ExchangeRatePage">
     <StackLayout>
-        <Label Text="Tiltle" />
-    </StackLayout>
+        <Image Source="currenciesimage.jpg" Aspect="AspectFit"/>
+
         <Grid>
             <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
@@ -19,10 +21,13 @@
             <Picker SelectedIndexChanged="pickerConvertFrom_SelectedIndexChanged" 
                 
                 x:Name="pickerConvertFrom" Title="Convert From" Grid.Row="0"  Grid.Column="0" />
-                <Picker x:Name="pickerConvertTo" Title="Convert To"  Grid.Row="0" Grid.Column="1"/>
-        <Entry Keyboard="Numeric" x:Name="txtCurrencyAmount" Grid.Row="1" Grid.Column="1" Text="100"  />
-    </Grid>
-   
-  
+            <Label Text="To" Grid.Row="0" Grid.Column="1"/>
+            <Picker x:Name="pickerConvertTo" Title="Convert To"  Grid.Row="0" Grid.Column="2"/>
+        <Entry Keyboard="Numeric" x:Name="txtCurrencyAmount" Grid.Row="1" Grid.Column="0" Text="100"  />
+            <Label Text="=" Grid.Row="1" Grid.Column="1"/>
+            <Label x:Name="lblexchangedAmount" Grid.Row="1" Grid.Column="2" />
+        </Grid>
 
+
+    </StackLayout>
 </ContentPage>

@@ -45,7 +45,8 @@ namespace ExchangeRateApp.Views
             var amount =  _exchangeRateService.CaculateExchangeRate(exchangeAmount, rate).ToString();
 
             var message = $"{exchangeAmount} {currencyFrom} = $ {amount} {exchangeTo} ";
-         await   DisplayAlert("title", message, "cancel");
+
+             lblexchangedAmount.Text = amount.ToString();
                
             }
       
