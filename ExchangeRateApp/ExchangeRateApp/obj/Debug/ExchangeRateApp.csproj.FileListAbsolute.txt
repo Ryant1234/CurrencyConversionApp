@@ -24,5 +24,6 @@ C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateAp
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp\obj\Debug\ExchangeRateApp.dll
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp\obj\Debug\ExchangeRateApp.pdb
+C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp\obj\Debug\ExchangeRateApp.csprojResolveAssemblyReference.cache
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp\obj\Debug\ExchangeRateApp.dll.mdb
 C:\Users\Ryan Thomas\Source\Repos\ExchangeRateApp\ExchangeRateApp\ExchangeRateApp\bin\Debug\ExchangeRateApp.dll.mdb

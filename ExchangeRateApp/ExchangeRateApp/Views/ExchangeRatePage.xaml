@@ -16,16 +16,24 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
-     
-            <Picker SelectedIndexChanged="pickerConvertFrom_SelectedIndexChanged" 
-                
-                x:Name="pickerConvertFrom" Title="Convert From" Grid.Row="0"  Grid.Column="0" />
+
+
+
+
+            <Entry Keyboard="Numeric" x:Name="txtCurrencyAmount" Grid.Row="0" Grid.Column="0" Text="100"  />
             <Label Text="To" Grid.Row="0" Grid.Column="1"/>
-            <Picker x:Name="pickerConvertTo" Title="Convert To"  Grid.Row="0" Grid.Column="2"/>
-        <Entry Keyboard="Numeric" x:Name="txtCurrencyAmount" Grid.Row="1" Grid.Column="0" Text="100"  />
+            <Label x:Name="lblexchangedAmount" Grid.Row="0" Grid.Column="2" />
+
+            <Picker   
+                x:Name="pickerConvertFrom" Title="Convert From" Grid.Row="1"  Grid.Column="0" />
+          
+
             <Label Text="=" Grid.Row="1" Grid.Column="1"/>
-            <Label x:Name="lblexchangedAmount" Grid.Row="1" Grid.Column="2" />
+      
+            <Picker x:Name="pickerConvertTo" Title="Convert To"  Grid.Row="1" Grid.Column="2"/>
+       
+          
+            <Button Text="Exchange" Grid.Row="2" Grid.ColumnSpan="3" Clicked="Button_Clicked" />
         </Grid>
 
 
